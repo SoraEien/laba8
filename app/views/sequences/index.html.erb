@@ -1,0 +1,6 @@
+<%= form_tag sequences_result_path, method: :get do %>
+  <label for="numbers">Введите числа через пробел:</label>
+  <%= text_field_tag :numbers %><br>
+
+  <%= submit_tag "Result" %>
+<% end %>

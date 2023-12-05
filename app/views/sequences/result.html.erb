@@ -1,0 +1,17 @@
+
+  <h2>Результаты:</h2>
+  <p>Количество искомых отрезков: <%= @result[:count] %></p>
+  <p>Самый длинный отрезок: <%= @result[:longest_segment] %></p>
+  <p>Отрезки: </p>
+  <table>
+    <tr>
+      <th>Начало</th>
+      <th>Конец</th>
+    </tr>
+    <% @result[:segments].each do |segment| %>
+      <tr>
+        <td><%= segment[:start] %></td>
+        <td><%= segment[:end] %></td>
+      </tr>
+    <% end %>
+  </table>
